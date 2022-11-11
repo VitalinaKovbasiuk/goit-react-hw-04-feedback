@@ -1,4 +1,5 @@
 import { ButtonContainer, Button } from './FeedbackOption.styled';
+import PropTypes from 'prop-types';
 
 export default function FeedbackOption({ options, onLeaveFeedback }) {
   return (
@@ -21,3 +22,10 @@ export default function FeedbackOption({ options, onLeaveFeedback }) {
     </ButtonContainer>
   );
 }
+
+FeedbackOption.propTypes = {
+  options: PropTypes.array,
+  onLeaveFeedback: PropTypes.func,
+};
+// onLeaveFeedback(option);
+// }}

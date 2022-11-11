@@ -1,12 +1,12 @@
-import "./App.css";
-import Feedback from "./Feedback/Feedback";
+import './App.css';
+import Feedback from './Feedback/Feedback';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Feedback />
     </div>
   );
-}
+};
 
 export default App;
